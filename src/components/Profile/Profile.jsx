@@ -1,11 +1,11 @@
 import css from '../Profile/Profile.module.css';
 
-function Profile({ username, tag, location, image, stats }) {
+function Profile({ name, tag, location, image, stats }) {
   return (
     <div className={css.container}>
       <div className={css.photoContainer}>
         <img className={css.picture} src={image} alt="User avatar" />
-        <p className={css.profileName}>{username}</p>
+        <p className={css.profileName}>{name}</p>
         <p className={css.profileInfo}>{tag}</p>
         <p className={css.profineInfo}>{location}</p>
       </div>
