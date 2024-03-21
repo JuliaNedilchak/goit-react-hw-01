@@ -1,23 +1,29 @@
+import css from '../Profile/Profile.module.css';
+
 function Profile({ username, tag, location, image, stats }) {
   return (
-    <div>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{username}</p> <p>{tag}</p> <p>{location}</p>
+    <div className={css.container}>
+      <div className={css.photoContainer}>
+        <img className={css.picture} src={image} alt="User avatar" />
+        <p className={css.profileName}>{username}</p>
+        <p className={css.profileInfo}>{tag}</p>
+        <p className={css.profineInfo}>{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span> <span>{stats.followers}</span>
+      <ul className={css.list}>
+        <li className={css.listItem}>
+          <span className="stats-item">Followers</span>
+          <span className="stats-numbers">{stats.followers}</span>
         </li>
 
-        <li>
-          <span>Views</span> <span>{stats.views}</span>
+        <li className={css.listItem}>
+          <span className="stats-item">Views</span>
+          <span className="stats-numbers">{stats.views}</span>
         </li>
 
-        <li>
-          <span>Likes</span>
-          <span> {stats.likes}</span>
+        <li className={css.listItem}>
+          <span className="stats-item">Likes</span>
+          <span className="stats-numbers"> {stats.likes}</span>
         </li>
       </ul>
     </div>
