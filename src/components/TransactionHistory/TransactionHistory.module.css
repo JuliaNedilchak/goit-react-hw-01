@@ -1,0 +1,9 @@
+.table {
+  text-align: center;
+  border: 1px solid blueviolet;
+}
+.line {
+  border: 1px solid blue;
+  padding: 8px;
+  width: 40px;
+}

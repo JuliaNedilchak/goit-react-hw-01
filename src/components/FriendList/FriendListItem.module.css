@@ -1,3 +1,22 @@
 .avatar {
   width: 60px;
 }
+.offline {
+  color: red;
+  text-align: center;
+}
+
+.online {
+  color: green;
+  text-align: center;
+}
+
+.item {
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid blue;
+  align-items: center;
+}
+.friendName {
+  text-align: center;
+}
